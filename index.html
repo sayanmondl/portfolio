@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/home.scss" />
+    <link rel="stylesheet" href="/src/styles/about.scss" />
+    <link rel="stylesheet" href="/src/styles/work.scss" />
+    <link rel="stylesheet" href="/src/styles/skills.scss" />
+    <link rel="stylesheet" href="/src/styles/contact.scss" />
+    <title>Sayan</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <a href="/" style="display: flex; align-items: center">
+            <img class="navbar-logo-img" src="/icon.png" alt="logo_img" />
+          </a>
+          <div class="navbar-logo-hover">
+            <img src="/icon.png" alt="logo_img_lg" />
+            <h1 class="text-grad">Sayan <br />Mondal</h1>
+          </div>
+        </div>
+        <ul class="navbar-links">
+          <li class="center p-text">
+            <a href="#home">
+              <img src="/icons/house.svg" alt="home" />
+              Home</a
+            >
+          </li>
+          <li class="center p-text">
+            <a href="#about">
+              <img src="/icons/graduation-cap.svg" alt="about" />
+              About</a
+            >
+          </li>
+          <li class="center p-text">
+            <a href="#work">
+              <img src="/icons/briefcase.svg" alt="work" />
+              Work</a
+            >
+          </li>
+          <li class="center p-text">
+            <a href="#skills">
+              <img src="/icons/code-xml.svg" alt="skills" />
+              Skills</a
+            >
+          </li>
+          <li class="center p-text">
+            <a href="#contact">
+              <img src="/icons/mail.svg" alt="contact" />
+              Contact</a
+            >
+          </li>
+        </ul>
+
+        <button id="navOpen" class="navbar-menu">
+          <img src="/bars-staggered.svg" alt="menu" id="menu" />
+        </button>
+      </nav>
+      <div id="navSidebar" class="navbar-sidebar">
+        <ul class="navbar-links-sidebar">
+          <li class="p-text">
+            <a href="#home">
+              <img src="/icons/house.svg" alt="home" />
+              Home</a
+            >
+          </li>
+          <li class="p-text">
+            <a href="#about">
+              <img src="/icons/graduation-cap.svg" alt="about" />
+              About</a
+            >
+          </li>
+          <li class="p-text">
+            <a href="#work">
+              <img src="/icons/briefcase.svg" alt="work" />
+              Work</a
+            >
+          </li>
+          <li class="p-text">
+            <a href="#skills">
+              <img src="/icons/code-xml.svg" alt="skills" />
+              Skills</a
+            >
+          </li>
+          <li class="p-text">
+            <a href="#contact">
+              <img src="/icons/mail.svg" alt="contact" />
+              Contact</a
+            >
+          </li>
+        </ul>
+        <button id="navClose">
+          <img src="/cross.svg" alt="cross" />
+        </button>
+      </div>
+
+      <div id="home" class="header">
+        <div class="animate-div header-info">
+          <div style="display: flex; gap: 20px; align-items: flex-end">
+            <span style="font-size: 36px">👋</span>
+            <span><p class="mid-text">Hello, I am</p></span>
+          </div>
+          <h1 class="head-text" style="margin-top: 12px; margin-bottom: 20px">
+            Sayan
+          </h1>
+
+          <div>
+            <div style="display: flex">
+              <p class="mid-text">
+                Full-Stack Developer &nbsp; • &nbsp;&nbsp; Android Developer
+                &nbsp; • &nbsp; & more
+              </p>
+            </div>
+          </div>
+
+          <div class="header-links">
+            <a href="#work">
+              <button class="black-button">View My Work</button>
+            </a>
+            <a href="#contact">
+              <button class="white-button">Contact Me</button>
+            </a>
+          </div>
+        </div>
+
+        <img class="header-img" src="/assets/dev_home.svg" alt="home_bg" />
+      </div>
+
+      <div id="about" class="about">
+        <h1 class="head-text-small">About me</h1>
+        <p class="p-text about-para">
+          I'm a developer from
+          <span
+            ><a
+              href="https://visvabharati.ac.in/index.html"
+              style="text-decoration: none; color: var(--secondary-color)"
+              >Visva-Bharati University</a
+            ></span
+          >
+          with expertise in Full-Stack Development, beautiful UI design, Android
+          Development, and Python. I love blending creativity with functionality
+          to deliver impactful digital experiences. Always eager to learn,
+          adapt, and innovate!
+        </p>
+
+        <div class="about-skills">
+          <a href="#skills">
+            <div class="skill-item">
+              <img
+                class="item-image"
+                src="/assets/about01.png"
+                alt="full_stack"
+              />
+              <div class="item-text">
+                <h3 class="text-grad">Full-Stack Developer</h3>
+                <p class="p-text">
+                  I'm a Full-Stack Developer who builds seamless user interfaces
+                  and robust back-end systems for scalable applications.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#skills">
+            <div class="skill-item">
+              <img
+                class="item-image"
+                src="/assets/about06.webp"
+                alt="android_dev"
+              />
+              <div class="item-text">
+                <h3 class="text-grad">Android Developer</h3>
+                <p class="p-text">
+                  I'm an Android Developer passionate about creating
+                  user-friendly and high-performing mobile apps.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="#skills">
+            <div class="skill-item">
+              <img
+                class="item-image"
+                src="/assets/about02.png"
+                alt="ui_design"
+              />
+              <div class="item-text">
+                <h3 class="text-grad">UI Designer</h3>
+                <p class="p-text">
+                  Im a UI designer passionate about creating intuitive and
+                  visually stunning user interfaces for web and mobile apps.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a href="#skills">
+            <div class="skill-item">
+              <img class="item-image" src="/assets/about04.png" alt="llp" />
+              <div class="item-text">
+                <h3 class="text-grad">Low Level programmer</h3>
+                <p class="p-text">
+                  I enjoy low-level programming, optimizing systems, and diving
+                  deep into code to enhance performance
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id="work" class="work">
+        <h1 class="head-text-small">My Projects</h1>
+
+        <div class="work-buttons">
+          <button>All</button>
+          <button>Ongoing</button>
+          <button>Completed</button>
+          <button>Deployed</button>
+        </div>
+
+        <div class="work-projects">
+          <div class="project completed deployed">
+            <div class="project-image">
+              <img
+                class="project-image-banner"
+                src="/assets/work1.jpg"
+                alt="project_cr7"
+              />
+              <div class="project-links">
+                <a href="https://github.com/sayanmondl/cr7">
+                  <img src="/assets/github.png" alt="github" />
+                </a>
+                <a href="https://cr7x.vercel.app/">
+                  <img src="/assets/eye.png" alt="open" />
+                </a>
+              </div>
+            </div>
+            <div class="project-text">
+              <h3>CR7 Website</h3>
+              <p class="p-text">A website about Cristiano Ronaldo</p>
+            </div>
+            <div class="tags">
+              <p class="tag-completed">Completed</p>
+              <p class="tag-deployed">Deployed</p>
+            </div>
+          </div>
+          <div class="project ongoing deployed">
+            <div class="project-image">
+              <img
+                class="project-image-banner"
+                src="/assets/work2.jpg"
+                alt="project_libr"
+              />
+              <div class="project-links">
+                <a href="">
+                  <img src="/assets/github.png" alt="github" />
+                </a>
+                <img
+                  style="cursor: not-allowed"
+                  src="/assets/crossed-eye.png"
+                  alt="open"
+                />
+              </div>
+            </div>
+            <div class="project-text">
+              <h3>Library Management</h3>
+              <p class="p-text">A website to manage library system</p>
+            </div>
+            <div class="tags">
+              <p class="tag-ongoing">Ongoing</p>
+              <p class="tag-deployed">Deployed</p>
+            </div>
+          </div>
+          <div class="project ongoing">
+            <div class="project-image">
+              <img
+                class="project-image-banner"
+                src="/assets/work3.jpg"
+                alt="project_explorer"
+              />
+              <div class="project-links">
+                <a href="https://github.com/sayanmondl/">
+                  <img src="/assets/github.png" alt="github" />
+                </a>
+                <img
+                  style="cursor: not-allowed"
+                  src="/assets/crossed-eye.png"
+                  alt="open"
+                />
+              </div>
+            </div>
+            <div class="project-text">
+              <h3>Explorer - Android Application</h3>
+              <p class="p-text">A Social Media Application</p>
+            </div>
+            <div class="tags">
+              <p class="tag-ongoing">Ongoing</p>
+            </div>
+          </div>
+          <div class="project completed">
+            <div class="project-image">
+              <img
+                class="project-image-banner"
+                src="/assets/work4.jpg"
+                alt="project_jarvis"
+              />
+              <div class="project-links">
+                <a href="https://github.com/sayanmondl/jarvis">
+                  <img src="/assets/github.png" alt="github" />
+                </a>
+                <img
+                  style="cursor: not-allowed"
+                  src="/assets/crossed-eye.png"
+                  alt="open"
+                />
+              </div>
+            </div>
+            <div class="project-text">
+              <h3>Jarvis</h3>
+              <p class="p-text">An AI Assistant Software made with Python</p>
+            </div>
+            <div class="tags">
+              <p class="tag-completed">Completed</p>
+            </div>
+          </div>
+          <div class="project completed deployed">
+            <div class="project-image">
+              <img
+                class="project-image-banner"
+                src="/assets/work5.jpg"
+                alt="project_calc"
+              />
+              <div class="project-links">
+                <a href="https://github.com/sayanmondl/Calculator">
+                  <img src="/assets/github.png" alt="github" />
+                </a>
+                <a
+                  href="https://github.com/sayanmondl/Calculator/blob/main/app-release.apk"
+                >
+                  <img src="/assets/eye.png" alt="open" />
+                </a>
+              </div>
+            </div>
+            <div class="project-text">
+              <h3>Android Calculator</h3>
+              <p class="p-text">A basic Calculator App for Android</p>
+            </div>
+            <div class="tags">
+              <p class="tag-completed">Completed</p>
+              <p class="tag-deployed">Deployed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills" class="skills">
+        <h1 style="margin: 0 auto" class="head-text-small">Skills</h1>
+        <div class="skills-info">
+          <div class="carousel-container">
+            <div class="skills-info-child" data-skill="Web">
+              <div class="child-inner">
+                <div class="skills-info-item">
+                  <img src="/assets/html.png" alt="html" />
+                  <h3 class="text-grad">HTML</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/css.png" alt="css" />
+                  <h3 class="text-grad">CSS</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/javascript.png" alt="javascript" />
+                  <h3 class="text-grad">JavaScript</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img
+                    style="width: 40px"
+                    src="/assets/typescript.svg"
+                    alt="typescript"
+                  />
+                  <h3 class="text-grad">TypeScript</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/react.png" alt="react" />
+                  <h3 class="text-grad">React</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/nextjs.svg" alt="nextjs" />
+                  <h3 class="text-grad">Next.js</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/express.png" alt="expressjs" />
+                  <h3 class="text-grad">express.js</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/node.png" alt="nodejs" />
+                  <h3 class="text-grad">Node.js</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/git.png" alt="git" />
+                  <h3 class="text-grad">Git</h3>
+                </div>
+              </div>
+            </div>
+            <div class="skills-info-child" data-skill="Databases">
+              <div class="child-inner">
+                <div class="skills-info-item">
+                  <img src="/assets/postgresql.png" alt="postgresql" />
+                  <h3 class="text-grad">PostgreSQL</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/mongodb.svg" alt="mongodb" />
+                  <h3 class="text-grad">MongoDB</h3>
+                </div>
+              </div>
+            </div>
+            <div class="skills-info-child" data-skill="Languages">
+              <div class="child-inner">
+                <div class="skills-info-item">
+                  <img src="/assets/python.png" alt="python" />
+                  <h3 class="text-grad">Python</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/javascript.png" alt="javascript" />
+                  <h3 class="text-grad">JavaScript</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img
+                    style="width: 40px; height: 40px"
+                    src="/assets/typescript.svg"
+                    alt="typescript"
+                  />
+                  <h3 class="text-grad">TypeScript</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/c.svg" alt="c" />
+                  <h3 class="text-grad">C</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/cpp.svg" alt="cpp" />
+                  <h3 class="text-grad">C++</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/java.png" alt="java" />
+                  <h3 class="text-grad">Java</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img
+                    style="width: 40px; height: 40px"
+                    src="/assets/kotlin.png"
+                    alt="kotlin"
+                  />
+                  <h3 class="text-grad">Kotlin</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/lua.svg" alt="lua" />
+                  <h3 class="text-grad">Lua</h3>
+                </div>
+                <div class="skills-info-item">
+                  <img src="/assets/dart.svg" alt="dart" />
+                  <h3 class="text-grad">Dart</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin: 0 auto" class="skills-buttons">
+          <button id="leftButton">
+            <img src="/icons/chevron-left.svg" alt="left_arrow" />
+          </button>
+          <p style="font-weight: 600"></p>
+          <button id="rightButton">
+            <img src="/icons/chevron-right.svg" alt="right_arrow" />
+          </button>
+        </div>
+      </div>
+
+      <div id="contact" class="contact">
+        <div class="contact-links">
+          <h3>CONTACT ME</h3>
+          <h1 class="head-text" style="line-height: 4rem">
+            Feel free to reach out
+          </h1>
+          <p class="p-text" style="margin-bottom: 40px">
+            Have questions or just want to say hi? I'd love to hear from you!
+            Feel free to reach out through any of the options below, and let's
+            connect.
+          </p>
+
+          <div class="email-phone">
+            <a href="mailto:sayanmondal5869@gmail.com">
+              <div class="link">
+                <div>
+                  <img src="/assets/mail.png" alt="email" />
+                </div>
+                <div>
+                  <p class="p-text">Email:</p>
+                  <p>sayanmondal5869@gmail.com</p>
+                </div>
+              </div>
+            </a>
+
+            <a href="tel:+918348158056">
+              <div class="link">
+                <div>
+                  <img src="/assets/telephone.png" alt="phone" />
+                </div>
+                <div>
+                  <p class="p-text">Phone:</p>
+                  <p>(+91) 834-8158-056</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/sayanmondl">
+              <img src="/assets/github.svg" alt="github" />
+            </a>
+            <a href="https://www.instagram.com/sayan.mondal18/">
+              <img src="/assets/instagram.svg" alt="instagram" />
+            </a>
+            <a href="https://x.com/sayanmondl">
+              <img src="/assets/twitter.svg" alt="twitter" />
+            </a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="dataForm">
+            <label class="p-text" for="firstName">First Name</label><br />
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Your first name"
+              required
+            /><br /><br />
+
+            <label class="p-text" for="lastName">Last Name</label><br />
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Your last name"
+              required
+            /><br /><br />
+
+            <label class="p-text" for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            /><br /><br />
+
+            <label class="p-text" for="message">Message</label><br />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here..."
+              rows="5"
+              required
+            ></textarea
+            ><br /><br />
+
+            <div style="display: flex; align-items: center">
+              <button type="submit">Send Message</button>
+              <div
+                id="responseMessage"
+                style="margin-left: 30px; font-size: small; color: green"
+              ></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/scripts/main.js"></script>
+    <script type="module" src="/src/scripts/animate.js"></script>
+  </body>
+</html>

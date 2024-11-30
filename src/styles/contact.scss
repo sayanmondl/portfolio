@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  --font-base: "Lexend Deca";
+
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --dark-gray-color: #32363e;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+.contact {
+  padding: 5rem 2rem 0;
+  display: flex;
+  flex-direction: row;
+  background: rgb(223, 221, 237);
+  min-height: 100vh;
+  background: linear-gradient(
+    32deg,
+    rgba(223, 221, 237, 1) 0%,
+    rgba(255, 255, 255, 1) 53%,
+    rgba(224, 241, 237, 1) 100%
+  );
+
+  @media screen and (max-width: 1280px) {
+    gap: 60px;
+    padding: 5rem 2.5rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+    padding: 5rem 4rem;
+  }
+
+  @media screen and (max-width: 475px) {
+    padding: 5rem 1.25rem;
+  }
+}
+
+.contact-links {
+  width: 50%;
+  padding: 20px 8rem;
+
+  h3 {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--secondary-color);
+  }
+
+  h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.5rem;
+      line-height: 3rem !important;
+    }
+  }
+
+  .email-phone {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    @media screen and (max-width: 850px) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  .link {
+    display: flex;
+    padding: 10px;
+    border-radius: 14px;
+    border: 1px solid rgba(49, 59, 172, 0.2);
+    background-color: var(--white-color);
+    margin-bottom: 10px;
+    transition: all 0.6s ease;
+    overflow: hidden;
+
+    p {
+      transition: all 0.4s ease;
+    }
+
+    &:hover {
+      transform: translateX(5px);
+      background-color: var(--secondary-color);
+    }
+
+    &:hover div:first-child {
+      transform: rotateZ(10deg);
+      background-color: var(--white-color);
+    }
+
+    &:hover p:first-child {
+      color: var(--lightGray-color) !important;
+    }
+
+    &:hover p:last-child {
+      color: var(--white-color) !important;
+    }
+
+    div:first-child {
+      padding: 10px;
+      background-color: var(--primary-color);
+      border-radius: 12px;
+      display: flex;
+      margin-right: 20px;
+
+      transition: all 0.6s ease;
+    }
+
+    img {
+      width: 24;
+      height: 24px;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    a {
+      padding: 10px;
+      background-color: var(--white-color);
+      border-radius: 12px;
+      border: 1px solid rgba(49, 59, 172, 0.2);
+      display: flex;
+      margin-right: 20px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: rotateZ(10deg) scale(1.2);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+      }
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  @media screen and (max-width: 1380px) {
+    padding: 20px 6rem;
+  }
+
+  @media screen and (max-width: 1280px) {
+    padding: 20px 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 20px 1rem;
+    width: 100%;
+  }
+}
+
+.contact-form {
+  width: 50%;
+  padding: 20px 5rem;
+
+  form {
+    background-color: var(--white-color);
+    padding: 30px 40px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+
+    label {
+      color: var(--dark-gray-color);
+      margin-left: 5px;
+      line-height: 1.75rem;
+    }
+
+    input,
+    textarea {
+      border: none;
+      padding: 12px;
+      border: 2px solid rgba(49, 59, 172, 0.2);
+      border-radius: 5px;
+      width: 100%;
+      font-family: var(--font-base);
+      outline: none;
+
+      &::placeholder {
+        font-family: var(--font-base);
+        color: var(--gray-color);
+      }
+    }
+
+    button {
+      background-color: var(--secondary-color);
+      border: none;
+      color: var(--white-color);
+      padding: 14px 24px;
+      border-radius: 5px;
+      font-family: var(--font-base);
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: rgb(82, 94, 223);
+      }
+
+      &:active {
+        transform: scale(0.8);
+      }
+    }
+  }
+
+  @media screen and (max-width: 1380px) {
+    padding: 20px 3rem;
+  }
+
+  @media screen and (max-width: 1280px) {
+    padding: 20px 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}

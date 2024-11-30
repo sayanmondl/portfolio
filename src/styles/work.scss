@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  --font-base: "Lexend Deca";
+
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --brown-color: #46364a;
+  --white-color: #ffffff;
+}
+
+.work {
+  padding: 5rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(252, 254, 255);
+  background: linear-gradient(
+    329deg,
+    rgba(252, 254, 255, 1) 0%,
+    rgba(220, 233, 239, 1) 53%,
+    rgba(252, 253, 255, 1) 100%
+  );
+
+  @media screen and (max-width: 450px) {
+    padding: 5rem 0;
+  }
+}
+
+.work-buttons {
+  display: flex;
+  margin-top: 80px;
+  gap: 20px;
+
+  button {
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font: var(--font-base);
+    font-size: small;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
+
+    &.active {
+      background-color: var(--secondary-color);
+      color: var(--primary-color);
+    }
+  }
+
+  
+  @media screen and (max-width: 640px) {
+    gap: 10px;
+  }
+}
+
+.work-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 80px 0;
+
+  @media screen and (max-width: 1380px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media screen and (max-width: 450px) {
+    padding-bottom: 0;
+  }
+}
+
+.project {
+  position: relative;
+  width: 400px;
+  height: 470px;
+  background-color: white;
+  margin: 0 10px;
+  border-radius: 14px;
+  padding: 30px;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid rgba(49, 59, 172, 0.2);
+
+  &:hover .project-image-banner {
+    opacity: 0.3;
+    transform: scale(1.08);
+  }
+
+  &:hover .project-links {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  &:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    transform: translateY(-5px);
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 90vw;
+  }
+}
+
+.project-image {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+  background-color: black;
+
+  .project-image-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+  }
+}
+
+.project-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 60px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+}
+
+.project-text {
+  text-align: center;
+  margin-top: 16px;
+  p {
+    text-align: center;
+  }
+}
+
+.tags {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tag-completed {
+  font-size: small;
+  color: var(--primary-color);
+  background-color: #0a3981;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+.tag-deployed {
+  font-size: small;
+  color: var(--primary-color);
+  background-color: #740938;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+.tag-ongoing {
+  font-size: small;
+  color: var(--primary-color);
+  background-color: #3d5300;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
